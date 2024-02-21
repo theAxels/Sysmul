@@ -1,13 +1,17 @@
-const slides = document.querySelectorAll('.carousel-slide');
-let currentSlide = 0;
-
-function nextSlide() {
-    slides[currentSlide].style.display = 'none';
-    currentSlide = (currentSlide + 1) % slides.length;
-    slides[currentSlide].style.display = 'block';
+function index(){
+    document.addEventListener('DOMContentLoaded', function() {
+        const slides = document.querySelectorAll('.carousel-slide');
+        let currentSlide = 0;
+    
+        function nextSlide() {
+            slides[currentSlide].style.display = 'none';
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].style.display = 'flex';
+        }
+    
+        setInterval(nextSlide, 3000);
+    });
 }
-
-setInterval(nextSlide, 3000);
 
 function toggleSynopsis() {
     var synopsisContent = document.querySelector('.synopsis-content');
