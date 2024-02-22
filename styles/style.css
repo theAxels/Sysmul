@@ -31,7 +31,7 @@ body {
 }
 .logo {
     margin: 0;
-    font-size: 1.6vw;
+    font-size: 2vw;
     color: white;
 }
 .nav-links {
@@ -44,7 +44,7 @@ body {
     margin-right: 20px;
 }
 .nav-links li a {
-    font-size: 1.6vw;
+    font-size: 1.8vw;
     text-decoration: none;
     color: white;
     transition: color 0.3s ease-in-out;
@@ -266,65 +266,14 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: center;
+    align-items: start;
     padding: 1vw;
 }
 
 .trending-section h2{
     margin-top: 10px;
-    font-size: 3vw;
+    font-size: 2.3vw;
 }
-
-/* .trending-list {
-    width: 100%;
-    list-style: none; 
-    padding-left: 0; 
-}
-
-.trending-list li {
-    width: 100%;
-    margin-bottom: 5px;
-    padding: 10px;
-}
-
-.trending-list li::before {
-    content: counter(listItem);
-    counter-increment: listItem;
-    display: inline-block;
-    width: 2vw;
-    height: 2vw;
-    line-height: 2vw;
-    text-align: center;
-    margin-right: 10px;
-    border-radius: 20%;
-}
-
-.trending-list li:nth-child(-n+3)::before {
-    background-color: #ffcc00;
-}
-
-.trending-list {
-    counter-reset: listItem;
-}
-
-.poster-card {
-    display: none;
-    width: 100px;
-    height: 150px;
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    z-index: 100;
-}
-
-.poster-card img{
-    width: 100%;
-    height: 100%;
-}
-
-.poster-card.show {
-    display: block;
-} */
 
 .trending-list {
     list-style: none; 
@@ -466,6 +415,32 @@ button:hover {
     max-height: none;
     overflow: visible;
 }
+
+.actress-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.arrow {
+    width: 10px;
+    /* position: absolute; */
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
+    padding: 0.5vw;
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+    display: none;
+}
+
+/* .actresses .left-arrow {
+    left: 10px;
+}
+
+.actresses .right-arrow {
+    right: 10px;
+} */
 
 .circle-cards {
     display: flex;

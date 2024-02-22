@@ -20,7 +20,28 @@ document.addEventListener("DOMContentLoaded", function() {
         listItems[i].addEventListener('mouseover', createMouseoverHandler(posters[i]));
         listItems[i].addEventListener('mouseout', createMouseoutHandler(posters[i]));
     }
+
+    const circleCards = document.querySelector('.circle-cards');
+    const leftArrow = document.querySelector('.left-arrow');
+    const rightArrow = document.querySelector('.right-arrow');
+
+    function toggleArrows() {
+        leftArrow.style.display = circleCards.scrollLeft > 0 ? 'block' : 'none';
+        rightArrow.style.display = circleCards.scrollLeft < (circleCards.scrollWidth - circleCards.clientWidth) ? 'block' : 'none';
+    }
+
+    toggleArrows();
+
+    circleCards.addEventListener('scroll', toggleArrows);
+    leftArrow.addEventListener('click', function() {
+        circleCards.scrollLeft -= 90;
+    });
+    rightArrow.addEventListener('click', function() {
+        circleCards.scrollLeft += 90;
+    });
+    window.addEventListener('resize', toggleArrows);
 });
+
 
 function createMouseoverHandler(poster) {
     return function() {
