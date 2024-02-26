@@ -1,196 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Video Page</title>
-<link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-
-<div class="container-besar">
-    <nav class="navbar">
-        <div class="container">
-            <h1 class="logo">OurTV</h1>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <!-- <li><a href="#">Hits Dramas</a></li>
-                <li><a href="#">Movies</a></li>
-                <li><a href="#">Popular Actresses</a></li> -->
-            </ul>
-        </div>
-    </nav>
-    <section class="video-section">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Risky Strategy</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="container-besar">
+      <div class="container">
+        <button class="logo-button" onclick="window.location.href = 'index.html';">Back</button>
+    </div>
+    
+      <section class="video-section">
         <div class="video-wrapper">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/8I4Vi_nfMIY?si=jNSnNbTwsImbnc3n" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/8I4Vi_nfMIY?si=jNSnNbTwsImbnc3n"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
         </div>
-    </section>
-    
-    <div class="body-container">
+      </section>
+
+      <div class="body-container">
         <div class="movies-detail-section">
-            <section class="top-info">
-                <h2>Judul Film</h2>
+          <section class="top-info">
+            <h2>Risky Strategy</h2>
+            <div class="rating" data-rating="9.8">9.8</div>
+            <dl>
+              <dt id="top">Top 1 | Top Rated Movie</dt>
+              <dt id="original">Original</dt>
+              <span class="dt-span">2024</span>
+            </dl>
+            <dl>
+              <dt>Indonesia</dt>
+              <dt>Teen</dt>
+              <dt>Fiction</dt>
+              <dt>Drama</dt>
+              <dt>School</dt>
+            </dl>
+          </section>
+
+          <section class="synopsis">
+            <h2>Sinopsis</h2>
+            <div class="synopsis-content">
+              <p>
+                Yanto akan menjalani ujian Biologi. Dia merasa putus asa,
+                semakin dia belajar, semakin dia tidak paham. Akhirnya, Yanto
+                pun memilih membuat contekan dibandingkan belajar. Rencana Yanto
+                sudah matang dalam menyontek besok. Akankah Yanto berhasil dalam
+                ujiannya kali ini? Apakah keputusan Yanto sudah tepat? 
+                Yanto yakin contekannya akan membawanya ke gerbang kelulusan. 
+                Namun, siapkah dia menghadapi konsekuensinya? 
+              </p>
+            </div>
+            <div class="toggle-btn">
+              <button onclick="toggleSynopsis()">Show More</button>
+            </div>
+          </section>
+
+          <section class="details">
+            <h2>Details</h2>
+            <div class="details-content">
+              <div class="metadata">
+                <h3>Metadata</h3>
                 <dl>
-                    <dt id="top">Top 1 | Top Rated  Movie</dt>
-                    <dt id="original">Original</dt>
-                    <span class="dt-span">2024</span>
+                  <div class="pair">
+                    <dl>Judul : Risky Strategy</dl>
+                  </div>
                 </dl>
-                <dl>
-                    <dt>Indonesia</dt>
-                    <dt>Mystery </dt>
-                    <dt>Adventure</dt>
-                    <dt>Friendship</dt>
-                </dl>
-            </section>
-            
-            <section class="synopsis">
-                <h2>Sinopsis</h2>
-                <div class="synopsis-content">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et malesuada fames ac turpis egestas maecenas pharetra convallis. Vulputate mi sit amet mauris commodo quis imperdiet. Magna etiam tempor orci eu lobortis elementum. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum. Mauris commodo quis imperdiet massa. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum. Amet mattis vulputate enim nulla aliquet porttitor lacus. Nunc aliquet bibendum enim facilisis gravida neque convallis a cras. Sit amet nisl suscipit adipiscing bibendum est. Vitae et leo duis ut diam quam nulla. Donec et odio pellentesque diam volutpat.
-        
-        Tincidunt dui ut ornare lectus sit amet. Risus nullam eget felis eget nunc. Pellentesque diam volutpat commodo sed egestas. Nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum. Amet tellus cras adipiscing enim eu turpis egestas. Consectetur a erat nam at lectus. A diam sollicitudin tempor id eu. Vitae semper quis lectus nulla at volutpat. Ut consequat semper viverra nam libero justo laoreet. Integer malesuada nunc vel risus. Sollicitudin nibh sit amet commodo nulla facilisi. Placerat in egestas erat imperdiet sed euismod nisi. Ac tortor dignissim convallis aenean et tortor. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum. Quis varius quam quisque id diam vel quam elementum pulvinar. Nec dui nunc mattis enim ut tellus elementum sagittis vitae. A lacus vestibulum sed arcu non odio. Dolor morbi non arcu risus. Feugiat nisl pretium fusce id velit. Nascetur ridiculus mus mauris vitae.
-                    </p>
-                    <!-- Add more synopsis content here -->
+                <h3>Technical Information</h3>
+                <div class="pair">
+                  <dl>Codec : H.264</dl>
                 </div>
-                <div class="toggle-btn">
-                    <button onclick="toggleSynopsis()">Show More</button>
+                <div class="pair">
+                  <dl>Frame Rate : 60 fps</dl>
                 </div>
-            </section>
-            
-            <section class="details">
-                <h2>Details</h2>
-                <div class="details-content">
-                    <dl>
-                        <dt>Director:</dt>
-                        <dd>John Doe</dd>
-                        <dt>Release Date:</dt>
-                        <dd>January 1, 2022</dd>
-                        <dt>Director:</dt>
-                        <dd>John Doe</dd>
-                        <dt>Release Date:</dt>
-                        <dd>January 1, 2022</dd>
-                        <dt>Director:</dt>
-                        <dd>John Doe</dd>
-                        <dt>Release Date:</dt>
-                        <dd>January 1, 2022</dd>
-                    </dl>
+                <div class="pair">
+                  <dl>Bitrate : 10 mbps</dl>
                 </div>
-                <div class="toggle-btn">
-                    <button onclick="toggleDetails()">Show More</button>
+                <div class="pair">
+                  <dl>Resolution : 1080p</dl>
                 </div>
-            </section>       
-            
-            <section class="actresses">
-                <h2>Actresses</h2>
-                <div class="actress-row">
-                    <!-- <div class="arrow left-arrow">&lt;</div> -->
-                    <div class="arrow left-arrow"><img src="assets/left-arrow.png" style="width: 10px; height: 10px;"></div>
-                    <div class="circle-cards">
-                        <!-- Circle cards for actresses -->
-                        <div class="circle-card">
-                            <img src="assets/zhao-lu-si.jpeg" alt="Actress 1">
-                            <p>Actress 1</p>
-                        </div>
-                        <div class="circle-card">
-                            <img src="assets/zhao-lu-si.jpeg" alt="Actress 2">
-                            <p>Actress 2</p>
-                        </div>
-                        <div class="circle-card">
-                            <img src="assets/zhao-lu-si.jpeg" alt="Actress 2">
-                            <p>Actress 3</p>
-                        </div>
-                        <div class="circle-card">
-                            <img src="assets/zhao-lu-si.jpeg" alt="Actress 2">
-                            <p>Actress 4</p>
-                        </div>
-                        <div class="circle-card">
-                            <img src="assets/zhao-lu-si.jpeg" alt="Actress 2">
-                            <p>Actress 5</p>
-                        </div>
-                        <!-- Add more circle cards as needed -->
-                    </div>
-                    <!-- <div class="arrow right-arrow">&gt;</div> -->
-                    <div class="arrow right-arrow"><img src="assets/right-arrow.png" style="width: 10px; height: 10px;"></div>
+                <div class="pair">
+                  <dl>Aspect Ratio : 16:9</dl>
                 </div>
-            </section>
+                <div class="pair">
+                  <dl>Container Format : .MP4</dl>
+              </div>
+            </div>
+            <div class="other-details">
+              <h3>Production Information</h3>
+              <dl>
+                  <div class="pairs">
+                    <dt>Release Date : 5 Maret 2024</dt>
+                  </div>
+                  <div class="pairs">
+                    <dt>Videographer : Montgomery Tiofilus</dt>
+                  </div>
+                  <div class="pair">
+                    <dt>Video Editor :</dt>
+                    <dd>Montgomery Teofilus</dd>
+                    <dd>Angkianto Laurence</dd>
+                    <dd>Shandez Darlene</dd>
+                    <dd>Cynthia Pandora</dd>
+                  </div>
+                  <div class="pair">
+                    <dt>Script :</dt>
+                    <dd>Angkianto Laurence</dd>
+                    <dd>Shandez Darlene</dd>
+                    <dd>Cynthia Pandora</dd>
+                    <dd>Montgomery Teofilus</dd>
+                  </div>
+              </dl>
+          </div>
+            </div>
+            <div class="toggle-btn">
+              <button onclick="toggleDetails()">Show More</button>
+            </div>
+          </section>
+
+          <section class="actresses">
+            <h2>Cast & Crew</h2>
+            <div class="actress-row">
+              <div class="arrow left-arrow">
+                <img
+                  src="assets/left-arrow.png"
+                  style="width: 10px; height: 10px"
+                />
+              </div>
+              <div class="circle-cards">
+                <div class="circle-card">
+                  <img src="assets/angki.jpg" alt="Actress 1" />
+                  <p>Angkianto Laurence</p>
+                </div>
+                <div class="circle-card">
+                  <img src="assets/cyn.jpg" alt="Actress 2" />
+                  <p>Cynthia Pandora</p>
+                </div>
+                <div class="circle-card">
+                  <img src="assets/shandez.jpg" alt="Actress 2" />
+                  <p>Shandez Darlene</p>
+                </div>
+                <div class="circle-card">
+                  <img src="assets/monty.jpg" alt="Actress 2" />
+                  <p>Montgomery Teofilus</p>
+                </div>
+              </div>
+              <div class="arrow right-arrow">
+                <img
+                  src="assets/right-arrow.png"
+                  style="width: 10px; height: 10px"
+                />
+              </div>
+            </div>
+          </section>
         </div>
-    
+
         <div class="trending-section">
-            <h2>Trending Now</h2>
-            <ul class="trending-list">
-                <li>
-                    Jangan Nyontek
-                    <div class="poster-card">
-                        <img src="poster_image_url_1" alt="Jangan Nyontek Poster">
-                    </div>
-                </li>
-                <li>
-                    The Invisible Guest
-                    <div class="poster-card">
-                        <img src="assets/card/the-invisible-guest.jpg" alt="The Invisible Guest">
-                    </div>
-                </li>
-                <li>
-                    Agak Laen
-                    <div class="poster-card">
-                        <img src="assets/card/agak-laen.jpg" alt="Agak Laen">
-                    </div>
-                </li>
-                <li>
-                    Ultimate Note
-                    <div class="poster-card">
-                        <img src="assets/card/ultimate-note.jpg" alt="Ultimate Note">
-                    </div>
-                </li>
-                <li>
-                    Hotel del Luna
-                    <div class="poster-card">
-                        <img src="assets/card/hotel-de-luna.jpg" alt="Hotel del Luna">
-                    </div>
-                </li>
-                <li>
-                    Break War
-                    <div class="poster-card">
-                        <img src="assets/card/break-war.jpg" alt="Break War">
-                    </div>
-                </li>
-                <li>
-                    The Roundup : No Way Out
-                    <div class="poster-card">
-                        <img src="assets/card/the-roundup-nwu.jpg" alt="The Roundup : No Way Out">
-                    </div>
-                </li>
-                <li>
-                    ONE PIECE FILM RED
-                    <div class="poster-card">
-                        <img src="assets/card/one-piece-film-red.jpg" alt="ONE PIECE FILM RED">
-                    </div>
-                </li>
-                <li>
-                    Love Me Love My Voice
-                    <div class="poster-card">
-                        <img src="assets/card/lmlmv.jpg" alt="Love Me Love My Voice">
-                    </div>
-                </li>
-                <li>
-                    The Warior From Sky
-                    <div class="poster-card">
-                        <img src="assets/card/the-warior-from-sky.jpg" alt="The Warior From Sky">
-                    </div>
-                </li>
-            </ul>
+          <h2>Trending Now</h2>
+          <ul class="trending-list">
+            <li>
+              Risky Strategy
+              <div class="poster-card">
+                <img src="assets/card/poster.jpg" alt="Jangan Nyontek Poster" />
+              </div>
+            </li>
+            <li>
+              The Invisible Guest
+              <div class="poster-card">
+                <img
+                  src="assets/card/the-invisible-guest.jpg"
+                  alt="The Invisible Guest"
+                />
+              </div>
+            </li>
+            <li>
+              Agak Laen
+              <div class="poster-card">
+                <img src="assets/card/agak-laen.jpg" alt="Agak Laen" />
+              </div>
+            </li>
+            <li>
+              Ultimate Note
+              <div class="poster-card">
+                <img src="assets/card/ultimate-note.jpg" alt="Ultimate Note" />
+              </div>
+            </li>
+            <li>
+              Hotel del Luna
+              <div class="poster-card">
+                <img src="assets/card/hotel-de-luna.jpg" alt="Hotel del Luna" />
+              </div>
+            </li>
+            <li>
+              Break War
+              <div class="poster-card">
+                <img src="assets/card/break-war.jpg" alt="Break War" />
+              </div>
+            </li>
+            <li>
+              The Roundup : No Way Out
+              <div class="poster-card">
+                <img
+                  src="assets/card/the-roundup-nwu.jpg"
+                  alt="The Roundup : No Way Out"
+                />
+              </div>
+            </li>
+            <li>
+              One Pece Film Red
+              <div class="poster-card">
+                <img
+                  src="assets/card/one-piece-film-red.jpg"
+                  alt="ONE PIECE FILM RED"
+                />
+              </div>
+            </li>
+            <li>
+              Love Me Love My Voice
+              <div class="poster-card">
+                <img src="assets/card/lmlmv.jpg" alt="Love Me Love My Voice" />
+              </div>
+            </li>
+            <li>
+              The Warior From Sky
+              <div class="poster-card">
+                <img
+                  src="assets/card/the-warior-from-sky.jpg"
+                  alt="The Warior From Sky"
+                />
+              </div>
+            </li>
+          </ul>
         </div>
+      </div>
     </div>
-</div>
 
-<footer>
-    <div class="container">
+    <footer>
+      <div class="container">
         <p>&copy; 2024 OurTV. All rights reserved.</p>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-<script src="js/main.js"></script>
-<script src="js/play.js"></script>
-</body>
+    <script src="js/main.js"></script>
+    <script src="js/play.js"></script>
+  </body>
 </html>
