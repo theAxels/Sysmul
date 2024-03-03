@@ -528,6 +528,7 @@ button:hover {
 }
 
 .details-content{
+    max-height: 80px;
     flex-wrap: wrap;
 }
 
