@@ -1,12 +1,3 @@
-window.addEventListener('scroll', function() {
-    var navbar = document.querySelector('.navbar');
-    if (window.scrollY > 0) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
-});
-
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -18,6 +9,16 @@ function scrollFunction() {
 }
 
 function goToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+    const duration = 500;
+    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    if (scrollTop > 0) {
+      const scrollStep = -scrollTop / (duration / 15);
+      const scrollInterval = setInterval(function() {
+        if (document.documentElement.scrollTop || document.body.scrollTop) {
+          window.scrollBy(0, scrollStep);
+        } else {
+          clearInterval(scrollInterval);
+        }
+      }, 15);
+    }
+  }

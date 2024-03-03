@@ -623,7 +623,7 @@ button:hover {
     cursor: pointer;
     transition: opacity 0.3s ease;
     text-align: center;
-    /* line-height: 25px; */
+    padding: 0;
 }
 
 #goToTopBtn i{

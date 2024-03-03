@@ -1,3 +1,10 @@
+document.addEventListener("DOMContentLoaded", function() {
+    var iframe = document.querySelector('#youtubeVideo');
+    var src = iframe.getAttribute('src');
+    src += '&autoplay=1';
+    iframe.setAttribute('src', src);
+});
+
 function toggleSynopsis() {
     var synopsisContent = document.querySelector('.synopsis-content');
     var button = document.querySelector('.synopsis .toggle-btn button');
