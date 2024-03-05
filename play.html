@@ -4,18 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Risky Strategy</title>
+    <link rel="icon" type="image/x-icon" href="/assets/fav_resize.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <div class="container-besar">
-      <div class="container">
-        <button class="logo-button" onclick="window.location.href = 'index.html';">Back</button>
-    </div>
+      <nav class="navbar">
+        <div class="container">
+          <ul class="nav-links">
+              <li><a href="index.html"><i class="fas fa-arrow-left"></i></a></li>
+          </ul>
+          <div class="logoElement">
+            <img src="assets/logo.png" alt="Your Logo" style="width: 60px; height: 60px">
+            <h1 class="logo">TemisTV</h1>
+          </div>
+          <ul class="nav-links">
+        </ul>
+        </div>
+      </nav>
+      <!-- <div class="container">
+        <button class="button-show" onclick="window.location.href = 'index.html';"><i class="fas fa-arrow-left"></i></button>
+      </div> -->
     
       <section class="video-section">
         <div class="video-wrapper">
-          <iframe id="youtubeVideo" width="560" height="315" src="https://www.youtube.com/embed/8I4Vi_nfMIY?si=37pxrm8UUu4C4rU7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe id="youtubeVideo" width="560" height="315" src="https://www.youtube.com/embed/0rSFzNh2yQo?si=K5jwNp1u6m0tFh4j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </section>
 
@@ -52,66 +67,65 @@
               </p>
             </div>
             <div class="toggle-btn">
-              <button onclick="toggleSynopsis()">Show More</button>
+              <button class="button-show" onclick="toggleSynopsis()">Show More</button>
             </div>
           </section>
-
-          <section class="details">
+          <!-- <section class="details">
             <b><h2>Details</h2></b>
             <div class="details-content">
               <div class="metadata">
-                <h3>Metadata</h3>
+                <i><h3>Metadata</h3></i>
                 <dl>
                   <dd>
                     <div class="pair">
-                      <dl>  Judul : Risky Strategy</dl>
+                      <dl>Judul : Risky Strategy</dl>
                     </div>
                   </dd>
                 </dl>
-                <h3>Technical Information</h3>
+                <i><h3>Technical Information</h3></i>
                 <dd>
                   <div class="pair">
-                    <dl>  Codec : H.264</dl>
+                    <dl>Codec : H.264</dl>
                   </div>
                   <div class="pair">
-                    <dl>  Frame Rate : 30 fps</dl>
+                    <dl>Frame Rate : 30 fps</dl>
                   </div>
                   <div class="pair">
-                    <dl>  Bitrate : 19 mbps</dl>
+                    <dl>Bitrate : 19 mbps</dl>
                   </div>
                   <div class="pair">
-                    <dl>  Resolution : 1080p</dl>
+                    <dl>Resolution : 1080p</dl>
                   </div>
                   <div class="pair">
-                    <dl>  Aspect Ratio : 16:9</dl>
+                    <dl>Aspect Ratio : 16:9</dl>
                   </div>
                   <div class="pair">
-                    <dl>  Container Format : .MP4</dl>
+                    <dl>Container Format : .MP4</dl>
                   </div>
                   <div class="pair">
-                    <dl>  Sound Type : stereo</dl>
+                    <dl>Sound Type : stereo</dl>
                   </div>
                 </dd>
             </div>
             <div class="other-details">
-              <h3>Production Information</h3>
+              <i><h3>Production Information</h3></i>
               <dd>
                 <dl>
                   <div class="pairs">
-                    <dt>  Release Date : 5 Maret 2024</dt>
+                    <dt>Release Date : 5 Maret 2024</dt>
                   </div>
                   <div class="pairs">
-                    <dt>  Videographer : Montgomery Tiofilus</dt>
+                    <dt>Videographer : Montgomery Tiofilus</dt>
                   </div>
                   <div class="pair">
-                    <dt>  Video Editor :</dt>
+                    <dt>Video Editor :</dt>
                     <dd>Montgomery Teofilus</dd>
                     <dd>Angkianto Laurence</dd>
                     <dd>Shandez Darlene</dd>
                     <dd>Cynthia Pandora</dd>
                   </div>
                   <div class="pair">
-                    <dt>  Script :</dt>
+                    <dt>Script :</dt>
                     <dd>Angkianto Laurence</dd>
                     <dd>Shandez Darlene</dd>
                     <dd>Cynthia Pandora</dd>
@@ -124,7 +138,76 @@
             <div class="toggle-btn">
               <button onclick="toggleDetails()">Show More</button>
             </div>
-          </section>
+          </section> -->
+          <section class="details">
+            <b><h2>Content Details</h2></b>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="details-content">
+                        <div class="metadata">
+                            <i><h3>Metadata</h3></i>
+                            <dl>
+                              <b>Judul :</b><span> Risky Strategy</span><br>
+                              <b>Release Date :</b><span> 5 Maret 2024</span><br>
+                              <b>Bahasa (Language):</b><span> Indonesia</span><br>
+                              <b>Durasi (Duration):</b><span> 10 menit 47 detik</span><br>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="details-content">
+                        <div class="other-details">
+                          <i><h3>Technical Information</h3></i>
+                            <dl>
+                              <b>Codec :</b><span> H.264</span><br>
+                              <b>Frame Rate :</b><span> 30 fps</span><br>
+                              <b>Bitrate :</b><span> 19 mbps</span><br>
+                              <b>Resolution :</b><span> 1080p</span><br>
+                              <b>Aspect Ratio :</b><span> 16:9</span><br>
+                              <b>Container Format :</b><span> .MP4</span><br>
+                              <b>Sound Type :</b><span> stereo</span><br>
+                            </dl>
+                        </div>
+                    </div>
+                </div>                
+                    <div class="carousel-item">
+                      <div class="details-content">
+                        <div class="other-details">
+                          <i><h3>Production Information</h3></i>
+                          <dl>
+                            <b>Videographer :</b><span> Montgomery Teofilus</span>
+                            <dt>Video Editor :</dt>
+                            <dd>Montgomery Teofilus</dd>
+                            <dd>Angkianto Laurence</dd>
+                            <dd>Shandez Darlene</dd>
+                            <dd>Cynthia Pandora</dd>
+                            <dt>Script :</dt>
+                            <dd>Angkianto Laurence</dd>
+                            <dd>Shandez Darlene</dd>
+                            <dd>Cynthia Pandora</dd>
+                            <dd>Montgomery Teofilus</dd>
+                          </dl>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <ol class="carousel-indicators">
+                  <li data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active"></li>
+                  <li data-bs-target="#carouselExampleControls" data-bs-slide-to="1"></li>
+                  <li data-bs-target="#carouselExampleControls" data-bs-slide-to="2"></li>
+              </ol>
+            </div>
+        </section>        
 
           <section class="actresses">
             <h2>Cast & Crew</h2>
@@ -162,7 +245,6 @@
             </div>
           </section>
         </div>
-
         <div class="trending-section">
           <h2>Trending Now</h2>
           <ul class="trending-list">
@@ -243,12 +325,22 @@
       </div>
     </div>
     <button onclick="goToTop()" id="goToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
-    <footer>
-      <div class="container">
-        <p>&copy; 2024 TemisTV. All rights reserved.</p>
+    <footer class="footer">
+      <div class="containerfoot">
+          <!-- <div class="logo">
+              <img src="assets/logo.png" alt="Your Logo">
+          </div> -->
+          <div class="right-foot">
+            <span>&copy; 2024 TemisTV. All rights reserved.</span><br>
+            <div class="legal">
+                <a>Privacy Policy</a>
+                <a>Terms of Service</a>
+                <a>Contact Us</a>
+            </div>
+          </div>
       </div>
-    </footer>
-
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/play.js"></script>
   </body>
