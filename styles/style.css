@@ -20,7 +20,6 @@ body {
     background-color: black;
 }
 
-
 .logoElement {
     display: flex;
     align-items: center;
@@ -610,16 +609,16 @@ h2{
     margin-bottom: 10px;
 }
 
-dt {
+.details dt {
     font-weight: bold;
     margin-bottom: 5px;
 }
 
-dl{
+.details dl{
     margin-left: 20px;
 }
 
-dd {
+.details dd {
     margin-left: 20px;
 }
 
