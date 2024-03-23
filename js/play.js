@@ -20,7 +20,7 @@ carousels.forEach(function(carousel) {
     var carouselInterval = setInterval(function() {
         var activeItem = carousel.querySelector('.carousel-item.active');
         var nextItem = activeItem.nextElementSibling;
-        var activeIndicator = carousel.querySelector('.carousel-indicators .active');
+        var activeIndicator = carousel.querySelector('.carousel-indicators.active');
         var nextIndicator;
     
         if (!nextItem) {

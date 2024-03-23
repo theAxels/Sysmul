@@ -1,4 +1,5 @@
 body {
+    font-family: 'Poppins';
     margin: 0;
     padding: 0;
     background-color: black;
@@ -26,6 +27,7 @@ body {
 }
 
 .logo {
+    font-weight: bold;
     margin: 0;
     font-size: 24px;
     color: white;
@@ -74,6 +76,7 @@ body {
 }
 
 .carousel-content {
+    font-family: 'Poppins';
     width: 30%;
     height: 60%;
     position: absolute;
@@ -85,10 +88,11 @@ body {
     flex-direction: column;
     justify-content: end;
     align-items: start;
+    margin-right: 15px;
 }
 
 .cc-desc {
-    max-height: 55px;
+    max-height: 18vh;
     overflow: hidden;
     transition: max-height 0.3s ease;
     margin-bottom: 10px;
@@ -112,32 +116,39 @@ body {
 }
 
 .dt-span{
+    font-weight: bold;
     padding: 0.3vw 0.6vw;
 }
 
 .carousel-content dl dt {
     font-size: 0.8em;
-    color: #000000;
-    background-color: #f0f0f0;
+    color: #ffffff;
+    background-color: #00000038;
     padding: 5px 10px;
     border-radius: 5px;
+    font-weight: 600;
 }
 
 .carousel-content h2 {
-    font-family: 'Default_JP';
-    font-size: 340%;
-    margin-bottom: 20px;
+    font-family: 'Rakkas';
+    font-weight: lighter;
+    font-size: 350%;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 10px #000000;
 }
 
 .carousel-content p {
+    /* font-weight: 600; */
     font-size: 1em;
     margin-bottom: 30px;
 }
 
 .carousel-content button {
+    font-family: 'Poppins';
     padding: 10px 20px;
-    font-size: 1.2em;
-    background-color: #e50914;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #ff0a16;
     color: white;
     border: none;
     border-radius: 5px;
@@ -145,7 +156,7 @@ body {
 }
 
 .carousel-content button:hover {
-    background-color: #ff0a16;
+    opacity: 0.8;
 }
 
 h2 {
@@ -306,7 +317,8 @@ h2 {
 }
 
 .rating {
-display: inline-block;
+    font-weight: bold;
+    display: inline-block;
 }
 
 .rating::before {
@@ -460,10 +472,12 @@ footer {
     text-align: center;
     margin-right: 10px;
     border-radius: 20%;
+    font-weight: bold;
 }
 
 .trending-list li:nth-child(-n+3)::before {
     background-color: #ffcc00;
+    color: #000;
 }
 
 .trending-list {
@@ -514,6 +528,7 @@ footer {
 }
 
 h2{
+    font-weight: bold;
     color: #ffffff;
 }
 
@@ -523,7 +538,8 @@ h2{
 }
 
 .button-show {
-    background-color: #e50914;
+    background-color: #ff0a16;
+    font-weight: bold;
     color: white;
     border: none;
     border-radius: 25px;
@@ -532,18 +548,19 @@ h2{
 }
 
 .button-show:hover {
-    background-color: #ff0a16;
+    opacity: 0.8;
 }
 
-.top-info{
+.top-info{    
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
 .top-info h2 {
-    font-family: 'Default_JP';
-    font-size: xx-large;
+    font-family: 'Rakkas';
+    font-weight: lighter;
+    font-size: 2.5em;
     margin: 0;
 }
 
@@ -557,6 +574,7 @@ h2{
 
 .top-info dl dt {
     font-size: smaller;
+    font-weight: bold;
     color: #000000;
     background-color: rgba(240, 240, 240, 0.4);
     color: white;
@@ -571,9 +589,10 @@ h2{
 }
 
 .synopsis-content{
-    max-height: 55px;
+    font-weight: 500;
+    max-height: 50px;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height 1s ease;
 }
 
 .carousel-inner {
@@ -601,28 +620,41 @@ h2{
 }
 
 .details-content h3 {
+    font-family: 'MuseoModerno';
+    font-weight: 600;
+    font-size: 2.5em;
     margin-bottom: 10px;
 }
 
 .metadata,
 .other-details {
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    /* margin-bottom: 10px; */
 }
 
 .details dt {
+    max-height: max-content;
     font-weight: bold;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
 }
 
 .details dl{
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 
 .details dd {
     margin-left: 20px;
 }
 
-
+.metadata dl, .other-details dl{
+    margin: 0;
+    max-width: max-content;
+    justify-self: center;
+    display: flexbox;
+}
 /* .pair {
     margin-bottom: 5px;
 } */
@@ -705,8 +737,8 @@ h2{
 }
 
 .circle-card {
-    width: 150px;
-    height: 150px;
+    width: 20%;
+    /* height: 150px; */
     aspect-ratio: 1;
     margin: 10px;
     text-align: center;
@@ -718,6 +750,12 @@ h2{
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.circle-card p{
+    font-size: small;
+    margin-bottom: 5px;
 }
 
 #goToTopBtn {
@@ -734,7 +772,7 @@ h2{
     width: 50px;
     height: 50px;
     cursor: pointer;
-    transition: opacity 0.3s ease;
+    transition: opacity 1s ease;
     text-align: center;
     padding: 0;
 }
@@ -746,8 +784,24 @@ h2{
 }
   
 #goToTopBtn:hover {
-opacity:     0.7;
+opacity:     0.8;
 }  
+
+::-webkit-scrollbar{
+    visibility: visible;
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background-color: #000;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: #b5b3b348;
+}
+
 
 @media screen and (max-width: 970px) {
     .carousel-content {
@@ -787,7 +841,7 @@ opacity:     0.7;
     .movie-content button {
         padding: 3% 6%;
         font-size: 70%;
-        background-color: #e50914;
+        background-color: #ff0a16;
         color: white;
         border: none;
         border-radius: 5px;
@@ -834,7 +888,7 @@ opacity:     0.7;
     .movie-content button {
         padding: 3.5% 6.5%;
         font-size: 48%;
-        background-color: #e50914;
+        background-color: #ff0a16;
         color: white;
         border: none;
         border-radius: 5px;
