@@ -833,6 +833,7 @@ opacity:     0.8;
     }
     
     .movie-content dl dt {
+        width: 2.5rem;
         font-size: 60%;
         color: #000000;
         background-color: #f0f0f0;
