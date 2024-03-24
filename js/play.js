@@ -10,8 +10,10 @@ window.addEventListener('scroll', function() {
 document.addEventListener("DOMContentLoaded", function() {
     var iframe = document.querySelector('#youtubeVideo');
     var src = iframe.getAttribute('src');
-    src += '&autoplay=1';
-    iframe.setAttribute('src', src);
+    setTimeout(function() {
+        src += '&autoplay=1';
+        iframe.setAttribute('src', src);
+    }, 1000);
 });
 
 var carousels = document.querySelectorAll('.carousel');
