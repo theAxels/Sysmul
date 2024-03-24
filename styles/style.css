@@ -701,12 +701,6 @@ h2{
     align-items: center;
 }
 
-.ppImg{
-    width: 100%;
-    aspect-ratio: 1;
-    object-fit: cover;
-}
-
 .arrow {
     width: 10px;
     /* position: absolute; */
@@ -743,7 +737,7 @@ h2{
 }
 
 .circle-card {
-    width: 20%;
+    min-width: 150px;
     /* height: 150px; */
     aspect-ratio: 1;
     margin: 10px;
@@ -761,7 +755,7 @@ h2{
 }
 
 .circle-card p{
-    font-size: 10px;
+    font-size: 1em;
     margin-bottom: 5px;
 }
 
@@ -879,9 +873,9 @@ opacity:     0.8;
         font-size: 20px;
     }
 
-    .circle-card p{
+    /* .circle-card p{
         font-size: 8px;
-    }
+    } */
 }
 
 @media (max-width: 646px){
@@ -933,8 +927,8 @@ opacity:     0.8;
         font-size: 16px;
     }
 
-    .circle-card p{
-        font-size: 6px;
+    .carousel-control-prev, .carousel-control-next{
+        display: none;
     }
 }
 
@@ -954,7 +948,7 @@ opacity:     0.8;
         border-radius: 2px;
     }
 
-    .circle-card p{
+    /* .circle-card p{
         font-size: 4px;
-    }
+    } */
 }
